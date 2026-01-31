@@ -84,6 +84,8 @@ const footerLinks = {
       { label: "Faqs", href: "/admissions/faqs" },
       { label: "Contact Admissions", href: "/contact" },
       { label: "Right to Infomation", href: "/academcics/right-to-information" },
+  {label: "Public Self Disclosure", href: "/public-self-disclosure" }
+
     ],
   },
 };

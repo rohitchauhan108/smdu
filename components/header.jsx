@@ -209,11 +209,11 @@ const navigationItems = [
               href: "#",
               icon: RiUserSettingsLine,
             },
-            {
-              label: "Registrar",
-              href: "/about/registrar",
-              icon: ClipboardList,
-            },
+            // {
+            //   label: "Registrar",
+            //   href: "/about/registrar",
+            //   icon: ClipboardList,
+            // },
             {
               label: "Control of Examination",
               href: "/about/control-of-examination",
@@ -507,7 +507,6 @@ const topBarLinks = [
   { label: "LOGIN", href: "/login" },
   { label: "CAREER", href: "/career" },
   { label: "ALUMNI", href: "/alumni" },
-  {label: "PUBLIC SELF DISCLOSURE", href: "/public-self-disclosure" }
 ];
 
 const megaHorizontalPosition = {
