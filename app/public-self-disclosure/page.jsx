@@ -159,14 +159,14 @@ export default function PublicDisclosure() {
       "title": "Academic Calendar",
       "subtitle": "Current Academic Session Schedule",
       "action": "View",
-      "href": "/academiccalendar"
+      "href": "/media/academic-calendar"
     },
     {
       "sno": "3",
       "title": "Statutes / Ordinances Pertaining to Academics / Examinations",
       "subtitle": "------",
       "action": "View",
-      "href": "/ordinance-committee"
+      "href": "/about/ordinance-committee"
     },
     {
       "sno": "4",

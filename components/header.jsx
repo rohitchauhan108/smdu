@@ -209,11 +209,11 @@ const navigationItems = [
               href: "#",
               icon: RiUserSettingsLine,
             },
-            {
-              label: "Registrar",
-              href: "/about/registrar",
-              icon: ClipboardList,
-            },
+            // {
+            //   label: "Registrar",
+            //   href: "/about/registrar",
+            //   icon: ClipboardList,
+            // },
             {
               label: "Control of Examination",
               href: "/about/control-of-examination",
@@ -507,7 +507,6 @@ const topBarLinks = [
   { label: "LOGIN", href: "/login" },
   { label: "CAREER", href: "/career" },
   { label: "ALUMNI", href: "/alumni" },
-  {label: "PUBLIC SELF DISCLOSURE", href: "/public-self-disclosure" }
 ];
 
 const megaHorizontalPosition = {
@@ -552,6 +551,7 @@ export function Header() {
             : "bg-white/70 backdrop-blur-sm"
         }`}
       >
+      
 {/* Top Announcement Bar */}
 <div className="bg-linear-to-r from-[#1a3491] to-[#d9363c] text-white text-sm py-2.5">
   <div className="container mx-auto px-4 md:px-8 lg:px-32 flex justify-between items-center gap-6">
