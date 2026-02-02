@@ -433,63 +433,63 @@ export default function PublicDisclosure() {
   "section": "8. Information Corner",
   "rows": [
     {
-      "sno": "12",
+      "sno": "1",
       "title": "RTI: Details of Central Public Information Officer (CPIO) and Appellate Authority (wherever Applicable)",
       "subtitle": "—",
       "action": "View",
       "href": "/academics/right-to-information"
     },
     {
-      "sno": "13",
+      "sno": "2",
       "title": "Circular Notices",
       "subtitle": "—",
       "action": "View",
       "href": "/academics/notification"
     },
     {
-      "sno": "14",
+      "sno": "3",
       "title": "Announcements",
       "subtitle": "Announcements",
       "action": "View",
       "href": "/academics/notification"
     },
     {
-      "sno": "15",
+      "sno": "4",
       "title": "Newsletters",
       "subtitle": "—",
       "action": "View",
       "href": "/academics/newsletters"
     },
     {
-      "sno": "16",
+      "sno": "5",
       "title": "News, Recent Events & Achievements",
       "subtitle": "—",
       "action": "View",
       "href": "/media/news-events"
     },
     {
-      "sno": "17",
+      "sno": "6",
       "title": "Job Openings",
       "subtitle": "—",
       "action": "Link",
       "href": "/career"
     },
     {
-      "sno": "18",
+      "sno": "7",
       "title": "Reservation Roster",
       "subtitle": "—",
       "action": "View",
       "href": "/reservation-roster"
     },
     {
-      "sno": "19",
+      "sno": "8",
       "title": "Study In India",
       "subtitle": "—",
       "action": "View",
       "href": "/academics/information-corner"
     },
     {
-      "sno": "20",
+      "sno": "9",
       "title": "Admission procedure and facilities provided to International Students",
       "subtitle": "—",
       "action": "View",
@@ -501,14 +501,14 @@ export default function PublicDisclosure() {
   "section": "9. Media",
   "rows": [
     {
-      "sno": "21",
+      "sno": "1",
       "title": "Picture Gallery",
       "subtitle": "—",
       "action": "View",
       "href": "/media/image-gallery"
     },
      {
-      "sno": "22",
+      "sno": "2",
       "title": "Video Gallery",
       "subtitle": "—",
       "action": "View",
@@ -520,14 +520,14 @@ export default function PublicDisclosure() {
   "section": "10. Contact Us",
   "rows": [
     {
-      "sno": "23",
+      "sno": "1",
       "title": "Details with Phone Number, Official Email-id and Address, Location Map",
       "subtitle": "—",
       "action": "View",
       "href": "/contact"
     },
     {
-      "sno": "24",
+      "sno": "2",
       "title": "Telephone Directory",
       "subtitle": "—",
       "action": "View",
