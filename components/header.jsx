@@ -562,7 +562,7 @@ export function Header() {
       </button>
       
       <Link 
-        href="/fee-payment" 
+        href="/admissions/fee-refund-policy.pdf" 
         className="font-medium hover:underline transition-all hover:text-orange-300"
       >
         Click here for Fee Payment

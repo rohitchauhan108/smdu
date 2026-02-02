@@ -1,239 +1,579 @@
-"use client"
+"use client";
 
-import { ChevronDown, Download, Eye, FileText, User, Link as LinkIcon } from "lucide-react"
-import React from "react"
+import {
+  ChevronDown,
+  Download,
+  Eye,
+  FileText,
+  User,
+  Link as LinkIcon,
+} from "lucide-react";
+import React from "react";
 
 export default function PublicDisclosure() {
   const disclosureData = [
     {
       section: "1. About the HEI (Higher Education Institution)",
       rows: [
-        { sno: "1", title: "About Us Overview", subtitle: "Brief introduction about the University", action: "View", href: "/about/history" },
-        { sno: "2", title: "Act and Statutes / MoA", subtitle: "Establishment Act and Statutes", action: "Download PDF", href: "/about/Gazette.pdf" },
-        { sno: "3", title: "Institutional Development Plan", subtitle: "Development Plan", action: "View", href: "/idp" },
-        { sno: "4", title: "Constituent Units/Affiliated Colleges, Off-Campus / Learning Support Centers", subtitle: "—", action: "NA", href: null },
-        { sno: "5", title: "Accreditation / Ranking", subtitle: "NAAC, NBA, NIRF", action: "NA", href: null },
-        { sno: "6", title: "Recognition / Approval (2(f), 12B, etc.)", subtitle: "—", action: "View", href: "/recognition-approval" },
-        { sno: "7", title: "Annual Reports", subtitle: "Annual Reports (2024–25)", action: "Download PDF", href: "/downloads/balancesheet.pdf" },
-        { sno: "8", title: "Annual Accounts & Audit Report", subtitle: "—", action: "Download PDF", href: "/downloads/balancesheet.pdf" },
+        {
+          sno: "1",
+          title: "About Us Overview",
+          subtitle: "Brief introduction about the University",
+          action: "View",
+          href: "/about/history",
+        },
+        {
+          sno: "2",
+          title: "Act and Statutes / MoA",
+          subtitle: "Establishment Act and Statutes",
+          action: "Download PDF",
+          href: "/about/Gazette.pdf",
+        },
+        {
+          sno: "3",
+          title: "Institutional Development Plan",
+          subtitle: "Development Plan",
+          action: "View",
+          href: "/idp",
+        },
+        {
+          sno: "4",
+          title:
+            "Constituent Units/Affiliated Colleges, Off-Campus / Learning Support Centers",
+          subtitle: "—",
+          action: "NA",
+          href: null,
+        },
+        {
+          sno: "5",
+          title: "Accreditation / Ranking",
+          subtitle: "NAAC, NBA, NIRF",
+          action: "NA",
+          href: null,
+        },
+        {
+          sno: "6",
+          title: "Recognition / Approval (2(f), 12B, etc.)",
+          subtitle: "—",
+          action: "View",
+          href: "/recognition-approval",
+        },
+        {
+          sno: "7",
+          title: "Annual Reports",
+          subtitle: "Annual Reports (2024–25)",
+          action: "Download PDF",
+          href: "/downloads/balancesheet.pdf",
+        },
+        {
+          sno: "8",
+          title: "Annual Accounts & Audit Report",
+          subtitle: "—",
+          action: "Download PDF",
+          href: "/downloads/balancesheet.pdf",
+        },
       ],
     },
-    // Example for section 2:
-
-
-{
-  section: "2. Administration (Profiles & Contact Details)",
-  rows: [
-    {
-      sno: "1",
-      title: "President",
-      subtitle: "Dr. H. S. Nautiyal • president@smdu.edu.in • +91-94117-14502",
-      action: "Profile",
-      href: "/about/president",
-    },
-    {
-      sno: "2",
-      title: "Pro Chancellor",
-      subtitle: "—",
-      action: "NA",
-      href: null,
-    },
-    {
-      sno: "3",
-      title: "Vice Chancellor",
-      subtitle: "Prof. (Dr.) Bhagwan Nautiyal • vc@smdu.edu.in • +91-94111-46245",
-      action: "Profile",
-      href: "/about/vice-chancellor",
-    },
-    {
-      sno: "4",
-      title: "Pro Vice Chancellor",
-      subtitle: "—",
-      action: "NA",
-      href: null,
-    },
-    {
-      sno: "5",
-      title: "Registrar",
-      subtitle: "Dr. Amit Kumar • registrar@smdu.edu.in • +91-81712-83797",
-      action: "Profile",
-      href: "/about/registrar",
-    },
-    {
-      sno: "6",
-      title: "Finance Officer",
-      subtitle: "Adv. Mr. Suman Nautiyal • finance@smdu.edu.in • +91-99976-89417",
-      action: "Profile",
-      href: "/about/finance-officer",
-    },
-    {
-      sno: "7",
-      title: "Controller of Examination",
-      subtitle: "Mr. Naveen Nautiyal • coe@smdu.edu.in • +91-98971-90311",
-      action: "Profile",
-      href: "/about/control-of-examination",
-    },
-    {
-      sno: "8",
-      title: "Chief Vigilance Officer",
-      subtitle: "—",
-      action: "NA",
-      href: null,
-    },
-    {
-      sno: "9",
-      title: "Ombudsperson",
-      subtitle: "Prof. J. P. Pachauri • jwalapachauri@gmail.com • +91-95575-11400",
-      action: "Profile",
-      href: "/about/ombudsperson",
-    },
-
-    /* ===== Statutory Bodies (PDF/Page as per Header) ===== */
 
     {
-      sno: "10",
-      title: "Board of Governors",
-      subtitle: "Statutory Body Documents Available",
-      action: "Link",
-      href: "/about/board-of-governor.pdf",   // PDF (as per header)
-    },
-    {
-      sno: "11",
-      title: "Board of Management",
-      subtitle: "Statutory Body Documents Available",
-      action: "Link",
-      href: "/about/board-of-management",     // Page
-    },
-    {
-      sno: "12",
-      title: "Academic Council",
-      subtitle: "Statutory Body Documents Available",
-      action: "Link",
-      href: "/about/admission-council",       // Using header equivalent
-    },
-    {
-      sno: "13",
-      title: "Board of Studies",
-      subtitle: "Statutory Body Documents Available",
-      action: "Link",
-      href: "/about/board-of-studies",        // Page (if exists)
-    },
-    {
-      sno: "14",
-      title: "Finance Committee",
-      subtitle: "Statutory Body Documents Available",
-      action: "Link",
-      href: "/about/finance-committee",       // Page
-    },
-    {
-      sno: "15",
-      title: "Internal Complaint Committee",
-      subtitle: "Committee Details Available",
-      action: "Link",
-      href: "/about/internal-complain-committee", // Header spelling/path
-    },
-    {
-      sno: "16",
-      title: "Academic Leadership (Deans & HoDs)",
-      subtitle: "Academic Administration",
-      action: "Link",
-      href: "/academics/academic-leadership",  // No direct header link given
-    },
-  ],
-},
+      section: "2. Administration (Profiles & Contact Details)",
+      rows: [
+        {
+          sno: "1",
+          title: "President",
+          subtitle:
+            "Dr. H. S. Nautiyal • president@smdu.edu.in • +91-94117-14502",
+          action: "Profile",
+          href: "/about/president",
+        },
+        {
+          sno: "2",
+          title: "Pro Chancellor",
+          subtitle: "—",
+          action: "NA",
+          href: null,
+        },
+        {
+          sno: "3",
+          title: "Vice Chancellor",
+          subtitle:
+            "Prof. (Dr.) Bhagwan Nautiyal • vc@smdu.edu.in • +91-94111-46245",
+          action: "Profile",
+          href: "/about/vice-chancellor",
+        },
+        {
+          sno: "4",
+          title: "Pro Vice Chancellor",
+          subtitle: "—",
+          action: "NA",
+          href: null,
+        },
+        {
+          sno: "5",
+          title: "Registrar",
+          subtitle: "Dr. Amit Kumar • registrar@smdu.edu.in • +91-81712-83797",
+          action: "Profile",
+          href: "/about/registrar",
+        },
+        {
+          sno: "6",
+          title: "Finance Officer",
+          subtitle:
+            "Adv. Mr. Suman Nautiyal • finance@smdu.edu.in • +91-99976-89417",
+          action: "Profile",
+          href: "/about/finance-officer",
+        },
+        {
+          sno: "7",
+          title: "Controller of Examination",
+          subtitle: "Mr. Naveen Nautiyal • coe@smdu.edu.in • +91-98971-90311",
+          action: "Profile",
+          href: "/about/control-of-examination",
+        },
+        {
+          sno: "8",
+          title: "Chief Vigilance Officer",
+          subtitle: "—",
+          action: "NA",
+          href: null,
+        },
+        {
+          sno: "9",
+          title: "Ombudsperson",
+          subtitle:
+            "Prof. J. P. Pachauri • jwalapachauri@gmail.com • +91-95575-11400",
+          action: "Profile",
+          href: "/about/ombudsperson",
+        },
 
+        /* ===== Statutory Bodies (PDF/Page as per Header) ===== */
 
-// section 3 
-{
-  "section": "3. Academics",
+        {
+          sno: "10",
+          title: "Board of Governors",
+          subtitle: "Statutory Body Documents Available",
+          action: "Link",
+          href: "/about/board-of-governor.pdf", // PDF (as per header)
+        },
+        {
+          sno: "11",
+          title: "Board of Management",
+          subtitle: "Statutory Body Documents Available",
+          action: "Link",
+          href: "/about/board-of-management", // Page
+        },
+        {
+          sno: "12",
+          title: "Academic Council",
+          subtitle: "Statutory Body Documents Available",
+          action: "Link",
+          href: "/about/admission-council", // Using header equivalent
+        },
+        {
+          sno: "13",
+          title: "Board of Studies",
+          subtitle: "Statutory Body Documents Available",
+          action: "Link",
+          href: "/about/board-of-studies", // Page (if exists)
+        },
+        {
+          sno: "14",
+          title: "Finance Committee",
+          subtitle: "Statutory Body Documents Available",
+          action: "Link",
+          href: "/about/finance-committee", // Page
+        },
+        {
+          sno: "15",
+          title: "Internal Complaint Committee",
+          subtitle: "Committee Details Available",
+          action: "Link",
+          href: "/about/internal-complain-committee", // Header spelling/path
+        },
+        {
+          sno: "16",
+          title: "Academic Leadership (Deans & HoDs)",
+          subtitle: "Academic Administration",
+          action: "Link",
+          href: "/academics/academic-leadership", // No direct header link given
+        },
+      ],
+    },
+    {
+      section: "3. Academics",
+      rows: [
+        {
+          sno: "1",
+          title: "Details of Academic Programs",
+          subtitle: "UG, PG, Diploma, Doctorate",
+          action: "View",
+          href: "/academics/academic-programs",
+        },
+        {
+          sno: "2",
+          title: "Academic Calendar",
+          subtitle: "Current Academic Session Schedule",
+          action: "View",
+          href: "/media/academic-calendar",
+        },
+        {
+          sno: "3",
+          title: "Statutes / Ordinances Pertaining to Academics / Examinations",
+          subtitle: "------",
+          action: "View",
+          href: "/about/ordinance-committee",
+        },
+        {
+          sno: "4",
+          title: "Schools/ Departments / Centres",
+          subtitle: "------",
+          action: "View",
+          href: "/about/schools",
+        },
+        {
+          sno: "5",
+          title:
+            "Schools/ Departments / Centres wise Faculty / Staff Details with Photographs",
+          subtitle: "------",
+          action: "View",
+          href: "/academics/academic-leadership",
+        },
+        {
+          sno: "6",
+          title: "List of UGC-Recognized ODL/Online Programs , if any",
+          subtitle: "------",
+          action: "NA",
+          href: "#",
+        },
+        {
+          sno: "7",
+          title: "Internal Quality Assurance Cell (IQAC)",
+          subtitle: "Composition and Activities",
+          action: "View",
+          href: "/iqac",
+        },
+        {
+          sno: "8",
+          title: "SC/ST/OBC Committee",
+          subtitle: "------------",
+          action: "View",
+          href: "/academics/sc-st-obc",
+        },
+        {
+          sno: "9",
+          title: "Library",
+          subtitle: "Central Library Details and Access",
+          action: "Visit",
+          href: "/library",
+        },
+        {
+          sno: "10",
+          title: "Academic Collaborations",
+          subtitle: "------",
+          action: "View",
+          href: "/academic-collaboration",
+        },
+      ],
+    },
+    {
+      section: "4. Admission and Fee",
+      rows: [
+        {
+          sno: "1",
+          title: "Prospectus (including fee structure or various programs)",
+          subtitle: "Prospectus",
+          action: "Download PDF",
+          href: "/admissions/Bronchure.pdf",
+        },
+        {
+          sno: "2",
+          title: "Admission Process and Guidelines",
+          subtitle: "Process and Guidelines",
+          action: "View",
+          href: "/admissions/admission-process",
+        },
+        {
+          sno: "3",
+          title: "International Admission Process and Guidelines",
+          subtitle: "Process and Guidelines",
+          action: "View",
+          href: "/admissions/international-admission",
+        },
+        {
+          sno: "4",
+          title: "Fee Refund Policy",
+          subtitle: "------",
+          action: "Download PDF",
+          href: "/admissions/fee-refund-policy.pdf",
+        },
+      ],
+    },
+    {
+      section: "5. Research",
+      rows: [
+        {
+          sno: "1",
+          title: "Research and Development Cell",
+          subtitle:
+            "Including Research and Consultancy Projects, Foreign Collaborations, Industry Collaborations",
+          action: "View",
+          href: "/academics/research-and-development-cell",
+        },
+        {
+          sno: "2",
+          title: "Incubation Centre / Entrepreneurship Cell / Startups",
+          subtitle: "Start-up and Innovation Initiatives",
+          action: "Explore",
+          href: "/academics/entrepreneurship-cell",
+        },
+        {
+          sno: "3",
+          title: "Central Facilities",
+          subtitle: "-------",
+          action: "Explore",
+          href: "/academics/central-faclities",
+        },
+      ],
+    },
+  {
+    "section": "6. Student Life",
+    "rows": [
+      {
+        "sno": "1",
+        "title": "Sports Facilities",
+        "subtitle": "Details of Indoor and Outdoor Sports",
+        "action": "View",
+        "href": "/academics/sports-facilites"
+      },
+      {
+        "sno": "2",
+        "title": "NCC / NSS Facilities",
+        "subtitle": "—",
+        "action": "View",
+        "href": "/academics/ncc-nss"
+      },
+      {
+        "sno": "3",
+        "title": "Hostel Facilities",
+        "subtitle": "Accommodation Details for Boys and Girls",
+        "action": "View",
+        "href": "/academics/hostel-facility"
+      },
+      {
+        "sno": "4",
+        "title": "Placement Cell and its Activities",
+        "subtitle": "—",
+        "action": "View",
+        "href": "/admissions/placement-cell.pdf"
+      },
+      {
+        "sno": "5",
+        "title": "Details of Student Grievance Redressal Committee (SGRC) and Ombudsperson",
+        "subtitle": "—",
+        "action": "View",
+        "href": "/academics/student-grievance-redressal-cell"
+      },
+      {
+        "sno": "6",
+        "title": "Health Facilities",
+        "subtitle": "—",
+        "action": "View",
+        "href": "/academics/health-facilites"
+      },
+      {
+        "sno": "7",
+        "title": "Internal Complaint Committee",
+        "subtitle": "—",
+        "action": "View",
+        "href": "/about/internal-complain-committee"
+      },
+      {
+        "sno": "8",
+        "title": "Anti-Ragging Cell",
+        "subtitle": "Constitution & Contact Details",
+        "action": "Link",
+        "href": "/academics/anti-ragging-cell"
+      },
+      {
+        "sno": "9",
+        "title": "Equal Opportunity Cell",
+        "subtitle": "—",
+        "action": "View",
+        "href": "/academics/equal-opportunity-cell"
+      },
+      {
+        "sno": "10",
+        "title": "Socio-Economically Disadvantaged Groups Cell",
+        "subtitle": "—",
+        "action": "View",
+        "href": "/academics/sedg-cell"
+      },
+      {
+        "sno": "11",
+        "title": "Facilities for Differently Abled (e.g.,Barrier-Free Environment)",
+        "subtitle": "—",
+        "action": "View",
+        "href": "/academics/disability-policy"
+      }
+    ]
+  },
+  {
+    "section": "7. Alumni",
+    "rows": [
+      {
+        "sno": "1",
+        "title": "Alumni Association with Details",
+        "subtitle": "—",
+        "action": "View",
+        "href": "/alumni"
+      }
+    ]
+  },
+  {
+  "section": "8. Information Corner",
   "rows": [
     {
-      "sno": "1",
-      "title": "Details of Academic Programs",
-      "subtitle": "UG, PG, Diploma, Doctorate",
+      "sno": "12",
+      "title": "RTI: Details of Central Public Information Officer (CPIO) and Appellate Authority (wherever Applicable)",
+      "subtitle": "—",
       "action": "View",
-      "href": "/academics/academic-programs"
+      "href": "/academics/right-to-information"
     },
     {
-      "sno": "2",
-      "title": "Academic Calendar",
-      "subtitle": "Current Academic Session Schedule",
+      "sno": "13",
+      "title": "Circular Notices",
+      "subtitle": "—",
       "action": "View",
-      "href": "/media/academic-calendar"
+      "href": "/academics/notification"
     },
     {
-      "sno": "3",
-      "title": "Statutes / Ordinances Pertaining to Academics / Examinations",
-      "subtitle": "------",
+      "sno": "14",
+      "title": "Announcements",
+      "subtitle": "Announcements",
       "action": "View",
-      "href": "/about/ordinance-committee"
+      "href": "/academics/notification"
     },
     {
-      "sno": "4",
-      "title": "Schools/ Departments / Centres",
-      "subtitle": "------",
+      "sno": "15",
+      "title": "Newsletters",
+      "subtitle": "—",
       "action": "View",
-      "href": "/schools"
+      "href": "/academics/newsletters"
     },
     {
-      "sno": "5",
-      "title": "Schools/ Departments / Centres wise Faculty / Staff Details with Photographs",
-      "subtitle": "------",
+      "sno": "16",
+      "title": "News, Recent Events & Achievements",
+      "subtitle": "—",
       "action": "View",
-      "href": "/academics/academic-leadership"
+      "href": "/media/news-events"
     },
     {
-      "sno": "6",
-      "title": "List of UGC-Recognized ODL/Online Programs , if any",
-      "subtitle": "------",
-      "action": "NA",
-      "href": "#"
+      "sno": "17",
+      "title": "Job Openings",
+      "subtitle": "—",
+      "action": "Link",
+      "href": "/career"
     },
     {
-      "sno": "7",
-      "title": "Internal Quality Assurance Cell (IQAC)",
-      "subtitle": "Composition and Activities",
+      "sno": "18",
+      "title": "Reservation Roster",
+      "subtitle": "—",
       "action": "View",
-      "href": "/iqac"
+      "href": "/reservation-roster"
     },
     {
-      "sno": "8",
-      "title": "SC/ST/OBC Committee",
-      "subtitle": "------------",
+      "sno": "19",
+      "title": "Study In India",
+      "subtitle": "—",
       "action": "View",
-      "href": "/sc-st-obc"
+      "href": "/academics/information-corner"
     },
     {
-      "sno": "9",
-      "title": "Library",
-      "subtitle": "Central Library Details and Access",
-      "action": "Visit",
-      "href": "/library"
-    },
-    {
-      "sno": "10",
-      "title": "Academic Collaborations",
-      "subtitle": "------",
+      "sno": "20",
+      "title": "Admission procedure and facilities provided to International Students",
+      "subtitle": "—",
       "action": "View",
-      "href": "/academic-collaboration"
+      "href": "/admissions/international-admission"
+    }
+  ]
+},
+{
+  "section": "9. Media",
+  "rows": [
+    {
+      "sno": "21",
+      "title": "Picture Gallery",
+      "subtitle": "—",
+      "action": "View",
+      "href": "/media/image-gallery"
+    },
+     {
+      "sno": "22",
+      "title": "Video Gallery",
+      "subtitle": "—",
+      "action": "View",
+      "href": "/media/video-gallery"
+    },
+  ]
+},
+{
+  "section": "10. Contact Us",
+  "rows": [
+    {
+      "sno": "23",
+      "title": "Details with Phone Number, Official Email-id and Address, Location Map",
+      "subtitle": "—",
+      "action": "View",
+      "href": "/contact"
+    },
+    {
+      "sno": "24",
+      "title": "Telephone Directory",
+      "subtitle": "—",
+      "action": "View",
+      "href": "/telephone-directory"
     }
   ]
 }
-
-
-
-    // Add remaining sections 3–10 the same way (with or without href for now)
-    // For brevity I'm showing only section 1 & 2 here — copy pattern for others
-  ]
+  ];
 
   const getActionStyle = (action) => {
-    if (action === "NA") return { bg: "bg-gray-200", text: "text-gray-600", icon: null, hover: "" }
-    if (action.includes("Download")) return { bg: "bg-green-100", text: "text-green-700", icon: Download, hover: "hover:bg-green-200" }
-    if (action === "Profile") return { bg: "bg-purple-100", text: "text-purple-700", icon: User, hover: "hover:bg-purple-200" }
-    if (action === "Link" || action === "Explore") return { bg: "bg-indigo-100", text: "text-indigo-700", icon: LinkIcon, hover: "hover:bg-indigo-200" }
+    if (action === "NA")
+      return {
+        bg: "bg-gray-200",
+        text: "text-gray-600",
+        icon: null,
+        hover: "",
+      };
+    if (action.includes("Download"))
+      return {
+        bg: "bg-green-100",
+        text: "text-green-700",
+        icon: Download,
+        hover: "hover:bg-green-200",
+      };
+    if (action === "Profile")
+      return {
+        bg: "bg-purple-100",
+        text: "text-purple-700",
+        icon: User,
+        hover: "hover:bg-purple-200",
+      };
+    if (action === "Link" || action === "Explore")
+      return {
+        bg: "bg-indigo-100",
+        text: "text-indigo-700",
+        icon: LinkIcon,
+        hover: "hover:bg-indigo-200",
+      };
     // default View / Visit
-    return { bg: "bg-blue-100", text: "text-blue-700", icon: Eye, hover: "hover:bg-blue-200" }
-  }
+    return {
+      bg: "bg-blue-100",
+      text: "text-blue-700",
+      icon: Eye,
+      hover: "hover:bg-blue-200",
+    };
+  };
 
   return (
     <section className="relative py-8 md:py-16 min-h-screen bg-gray-50">
@@ -241,7 +581,8 @@ export default function PublicDisclosure() {
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage: "linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)",
+          backgroundImage:
+            "linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)",
           backgroundSize: "40px 40px",
         }}
       />
@@ -257,13 +598,17 @@ export default function PublicDisclosure() {
             Mandatory Disclosure
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            As per UGC Guidelines — Smt. Manjira Devi University, Uttarkashi (Uttarakhand)
+            As per UGC Guidelines — Smt. Manjira Devi University, Uttarkashi
+            (Uttarakhand)
           </p>
         </div>
 
         <div className="space-y-10 md:space-y-16">
           {disclosureData.map((section, secIdx) => (
-            <div key={secIdx} className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+            <div
+              key={secIdx}
+              className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200"
+            >
               {/* Section header */}
               <div className="bg-linear-to-r from-orange-500 to-amber-600 px-6 py-4 text-white font-bold text-lg md:text-xl">
                 {section.section}
@@ -272,8 +617,8 @@ export default function PublicDisclosure() {
               {/* Rows */}
               <div className="divide-y divide-gray-100">
                 {section.rows.map((row, rowIdx) => {
-                  const style = getActionStyle(row.action)
-                  const Icon = style.icon
+                  const style = getActionStyle(row.action);
+                  const Icon = style.icon;
 
                   return (
                     <div
@@ -283,10 +628,16 @@ export default function PublicDisclosure() {
                       {/* Left - info */}
                       <div className="flex-1">
                         <div className="flex items-center gap-3">
-                          <span className="text-sm font-medium text-gray-500 w-8">{row.sno}.</span>
+                          <span className="text-sm font-medium text-gray-500 w-8">
+                            {row.sno}.
+                          </span>
                           <div>
-                            <h3 className="font-medium text-gray-900">{row.title}</h3>
-                            <p className="text-sm text-gray-600 mt-0.5 whitespace-pre-line">{row.subtitle}</p>
+                            <h3 className="font-medium text-gray-900">
+                              {row.title}
+                            </h3>
+                            <p className="text-sm text-gray-600 mt-0.5 whitespace-pre-line">
+                              {row.subtitle}
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -311,7 +662,7 @@ export default function PublicDisclosure() {
                         </a>
                       )}
                     </div>
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -319,9 +670,10 @@ export default function PublicDisclosure() {
         </div>
 
         <p className="text-center text-sm text-gray-500 mt-12">
-          Last updated: January 2026 • Contact: registrar@smdu.edu.in | +91-80063-45557
+          Last updated: January 2026 • Contact: registrar@smdu.edu.in |
+          +91-80063-45557
         </p>
       </div>
     </section>
-  )
+  );
 }
