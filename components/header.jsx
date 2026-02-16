@@ -241,8 +241,8 @@ const navigationItems = [
               icon: UsersRound,
             },
             {
-              label: "Admission Council",
-              href: "/about/admission-council",
+              label: "Academic Council",
+              href: "/about/academic-council",
               icon: FileCheck,
             },
             {
