@@ -167,7 +167,7 @@ export default function PublicDisclosure() {
           title: "Academic Council",
           subtitle: "Statutory Body Documents Available",
           action: "Link",
-          href: "/about/admission-council", // Using header equivalent
+          href: "/about/academic-council", // Using header equivalent
         },
         {
           sno: "13",
