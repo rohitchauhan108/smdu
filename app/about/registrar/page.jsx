@@ -31,7 +31,7 @@ export default function RegistrarMessage() {
           <div className="grid lg:grid-cols-3 gap-8 items-center">
             {/* Image Side */}
             <div className="lg:col-span-1 relative group">
-              <div className="h-60 bg-relative-to-br from-amber-500/10 via-orange-600/5 to-orange-500/10 rounded-3xl shadow-2xl overflow-hidden border-2 border-white/30 group-hover:border-orange-200/60 transition-all duration-700 hover:shadow-3xl">
+              <div className="h-120 bg-relative-to-br from-amber-500/10 via-orange-600/5 to-orange-500/10 rounded-3xl shadow-2xl overflow-hidden border-2 border-white/30 group-hover:border-orange-200/60 transition-all duration-700 hover:shadow-3xl">
                 <img
                   src="/about/registrar.jpg"
                   alt="Dr. Kapil Mohan Upadhyay, Registrar of Smt. Manjira Devi University"
