@@ -111,7 +111,7 @@ export default function PublicDisclosure() {
         {
           sno: "5",
           title: "Registrar",
-          subtitle: "Dr. Amit Kumar • registrar@smdu.edu.in • +91-81712-83797",
+          subtitle: "Dr. Kapil Mohan Upadhyay • contact@drkapilmohan.site • +91-8279434794",
           action: "Profile",
           href: "/about/registrar",
         },
