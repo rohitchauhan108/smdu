@@ -34,14 +34,14 @@ export default function RegistrarMessage() {
               <div className="h-60 bg-relative-to-br from-amber-500/10 via-orange-600/5 to-orange-500/10 rounded-3xl shadow-2xl overflow-hidden border-2 border-white/30 group-hover:border-orange-200/60 transition-all duration-700 hover:shadow-3xl">
                 <img
                   src="/about/registrar.jpg"
-                  alt="Dr. Amit Kumar, Registrar of Smt. Manjira Devi University"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out"
+                  alt="Dr. Kapil Mohan Upadhyay, Registrar of Smt. Manjira Devi University"
+                  className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-1000 ease-out"
                 />
                 {/* Dynamic Overlay */}
                 <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-amber-500/10 opacity-0 group-hover:opacity-100 transition-all duration-700 flex items-end p-6">
                   <div className="text-white text-sm bg-black/20 backdrop-blur-sm rounded-xl px-4 py-2 flex items-center gap-2">
                     <Award className="w-4 h-4" />
-                    20+ Years of Dedication
+                    15+ Years of Dedication
                   </div>
                 </div>
               </div>
@@ -49,10 +49,10 @@ export default function RegistrarMessage() {
             </div>
 
             {/* Profile Info Side */}
-            <div className="lg:col-span-2 h-60  bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-orange-100/50 p-8 lg:p-10 text-center lg:text-left">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">Dr. Amit Kumar</h2>
+            <div className="lg:col-span-2 h-auto bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-orange-100/50 p-8 lg:p-10 text-center lg:text-left">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">Dr. Kapil Mohan Upadhyay</h2>
               <p className="text-lg text-orange-700 mb-4 font-semibold">Registrar</p>
-              <p className="text-gray-600 mb-6 italic">Smt. Manjira Devi University, Uttarkashi, Uttarakhand</p>
+              <p className="text-gray-600 mb-6 italic">Smt. Manjira Devi University, Uttarakhand</p>
              
             </div>
           </div>
@@ -60,6 +60,22 @@ export default function RegistrarMessage() {
 
         {/* Timeline-Style Sections Grid - Unique Accordion-Like Cards */}
         <div className="grid xl:grid-cols-2 gap-8 lg:gap-10 space-y-8 xl:space-y-0">
+          {/* About Registrar - Full Width */}
+          <div className="xl:col-span-2 bg-white rounded-3xl shadow-2xl border border-orange-100/50 overflow-hidden group hover:shadow-3xl transition-all duration-500">
+            <div className="bg-linear-to-r from-orange-500 to-amber-600 px-6 py-4 text-white relative overflow-hidden">
+              <h3 className="text-xl font-bold flex items-center gap-2">
+                <Users className="w-5 h-5" />
+                About Registrar
+              </h3>
+              <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-opacity duration-500" />
+            </div>
+            <div className="p-6 space-y-4">
+              <p className="text-gray-700 text-base leading-relaxed">
+                Dr. Kapil Mohan Upadhyay is a senior academic administrator and naturopathy professional with more than 15 years of experience in higher education, academic governance, and institutional development. He has served in leadership roles such as Principal, Associate Professor, Head of Department, and Academic Consultant at reputed universities across North India. His professional expertise includes curriculum development, regulatory coordination, university administration, and promotion of Yoga and Naturopathy education.
+              </p>
+            </div>
+          </div>
+
           {/* Educational Qualifications - Timeline Card */}
           <div className="bg-white rounded-3xl shadow-2xl border border-orange-100/50 overflow-hidden group hover:shadow-3xl transition-all duration-500">
             <div className="bg-linear-to-r from-orange-500 to-amber-600 px-6 py-4 text-white relative overflow-hidden">
@@ -73,26 +89,30 @@ export default function RegistrarMessage() {
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Ph.D. in Pharmacy, P.K. University, Shivpuri (M.P.)</span>
+                  <span className="text-sm">Bachelor of Naturopathy & Yogic Sciences (BNYS)</span>
                 </li>
                 <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">M.Pharm, S.G.R.R. University, Dehradun, Uttarakhand</span>
+                  <span className="text-sm">MSc Yoga</span>
                 </li>
                 <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">B.Pharm, Ramesh Institute, Greater Noida, Uttar Pradesh</span>
+                  <span className="text-sm">Post Graduation in English</span>
+                </li>
+                <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
+                  <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
+                  <span className="text-sm">Diploma in Naturopathy & Yoga</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Professional Experience - Timeline Card */}
+          {/* Areas of Expertise - Timeline Card */}
           <div className="bg-white rounded-3xl shadow-2xl border border-orange-100/50 overflow-hidden group hover:shadow-3xl transition-all duration-500">
             <div className="bg-linear-to-r from-orange-500 to-amber-600 px-6 py-4 text-white relative overflow-hidden">
               <h3 className="text-xl font-bold flex items-center gap-2">
-                <Calendar className="w-5 h-5" />
-                Professional Experience
+                <Sparkles className="w-5 h-5" />
+                Areas of Expertise
               </h3>
               <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-opacity duration-500" />
             </div>
@@ -100,34 +120,30 @@ export default function RegistrarMessage() {
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Lecturer, Roorkee College of Pharmacy (2007–2008)</span>
+                  <span className="text-sm">University Administration & Academic Governance</span>
                 </li>
                 <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Assistant Professor, Om Bio Science & Pharmacy College, Roorkee (Oct 2010 – Aug 2011)</span>
+                  <span className="text-sm">Curriculum Development & Regulatory Affairs</span>
                 </li>
                 <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Assistant Professor, Smt. Manjira Devi Shikshan & Prashikshan Institute, Uttarkashi (Aug 2011 – Oct 2014)</span>
+                  <span className="text-sm">Naturopathy and Yogic Sciences Education</span>
                 </li>
                 <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Principal, Smt. Manjira Devi Shikshan & Prashikshan Institute, Uttarkashi (Oct 2014 – Oct 2024)</span>
-                </li>
-                <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
-                  <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Deputy Registrar, Smt. Manjira Devi University, Rukmani Nagar, Uttarkashi (Sep 2024 – Jul 2025)</span>
+                  <span className="text-sm">Institutional Development & Strategic Planning</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Administrative Responsibilities - Full Width */}
-          <div className="xl:col-span-2 bg-white rounded-3xl shadow-2xl border border-orange-100/50 overflow-hidden group hover:shadow-3xl transition-all duration-500 xl:row-start-3">
+          {/* Key Responsibilities as Registrar - Full Width */}
+          <div className="xl:col-span-2 bg-white rounded-3xl shadow-2xl border border-orange-100/50 overflow-hidden group hover:shadow-3xl transition-all duration-500">
             <div className="bg-linear-to-r from-orange-500 to-amber-600 px-6 py-4 text-white relative overflow-hidden">
               <h3 className="text-xl font-bold flex items-center gap-2">
                 <Users className="w-5 h-5" />
-                Administrative Responsibilities
+                Key Responsibilities as Registrar
               </h3>
               <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-opacity duration-500" />
             </div>
@@ -135,50 +151,34 @@ export default function RegistrarMessage() {
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
                 <li className="flex items-center gap-3 pl-4 border-l-2 border-orange-200 text-sm">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  Deputy Registrar, Smt. Manjira Devi University, Uttarkashi
+                  Custodian of statutory records and official university documentation
                 </li>
                 <li className="flex items-center gap-3 pl-4 border-l-2 border-orange-200 text-sm">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  Principal, Department of Pharmacy, Smt. Manjira Devi Shikshan & Prashikshan Institute
+                  Coordination with Academic Council, Board of Studies, and statutory bodies
                 </li>
                 <li className="flex items-center gap-3 pl-4 border-l-2 border-orange-200 text-sm">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  Member, Executive Council – Smt. Manjira Devi University
+                  Implementation of university ordinances, regulations, and compliance
                 </li>
                 <li className="flex items-center gap-3 pl-4 border-l-2 border-orange-200 text-sm">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  Member, Board of Studies – Department of Pharmacy
+                  Administrative supervision and governance support
                 </li>
                 <li className="flex items-center gap-3 pl-4 border-l-2 border-orange-200 text-sm">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                 Acting Principal, Department of Engineering (2013–2019)
-                </li>
-                <li className="flex items-center gap-3 pl-4 border-l-2 border-orange-200 text-sm">
-                  <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  Co-ordinator/Nodal Officer – AISHE, AICTE, PCI, NSP, SMDU
-                </li>
-                <li className="flex items-center gap-3 pl-4 border-l-2 border-orange-200 text-sm">
-                  <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  Coordinator – Staff Selection Committee, ICC/GSH, Cultural Committee
-                </li>
-                 <li className="flex items-center gap-3 pl-4 border-l-2 border-orange-200 text-sm">
-                  <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  Controller of Examinations – Various exams conducted by UKPSC, UKSSSC, Group C, and UBTER
-                </li>
-                 <li className="flex items-center gap-3 pl-4 border-l-2 border-orange-200 text-sm">
-                  <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                 Organizer – Various Seminars/Webinars conducted by the Central Government of India and Uttarakhand State Government
+                  Facilitation of academic and administrative coordination across departments
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Research Interests - Timeline Card */}
-          <div className="bg-white rounded-3xl shadow-2xl border border-orange-100/50 overflow-hidden group hover:shadow-3xl transition-all duration-500">
+          {/* Contact Information - Full Width */}
+          <div className="xl:col-span-2 bg-white rounded-3xl shadow-2xl border border-orange-100/50 overflow-hidden group hover:shadow-3xl transition-all duration-500">
             <div className="bg-linear-to-r from-orange-500 to-amber-600 px-6 py-4 text-white relative overflow-hidden">
               <h3 className="text-xl font-bold flex items-center gap-2">
-                <Sparkles className="w-5 h-5" />
-                Research Interests
+                <Mail className="w-5 h-5" />
+                Contact Information
               </h3>
               <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-opacity duration-500" />
             </div>
@@ -186,50 +186,15 @@ export default function RegistrarMessage() {
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Ethnopharmacological Studies</span>
+                  <span className="text-sm">Phone: +91-8279434794</span>
                 </li>
                 <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Pharmacological Screening: wound healing potential, antioxidant, anti-inflammatory, and antimicrobial activities</span>
+                  <span className="text-sm">Email: contact@drkapilmohan.site</span>
                 </li>
                 <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Pharmacokinetic parameters</span>
-                </li>
-                <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
-                  <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Bioassay of drugs</span>
-                </li>
-                <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
-                  <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Clinical trials (collection of patient data)</span>
-                </li>
-                  <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
-                  <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Molecular docking studies</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Research Publications - Compact Card */}
-          <div className="bg-white rounded-3xl shadow-2xl border border-orange-100/50 overflow-hidden group hover:shadow-3xl transition-all duration-500">
-            <div className="bg-linear-to-r from-orange-500 to-amber-600 px-6 py-4 text-white relative overflow-hidden">
-              <h3 className="text-xl font-bold flex items-center gap-2">
-                <BookOpen className="w-5 h-5" />
-                Research Publications
-              </h3>
-              <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-opacity duration-500" />
-            </div>
-            <div className="p-6 space-y-6">
-              <div className="text-center py-6 bg-linear-to-r from-orange-50 to-amber-50 rounded-2xl">
-                <p className="text-4xl font-black text-orange-600 mb-2">22+</p>
-                <p className="text-sm text-gray-600 uppercase tracking-wide">International Publications</p>
-              </div>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
-                  <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Presented 20+ papers at national & international conferences</span>
+                  <span className="text-sm">Website: www.drkapilmohan.site</span>
                 </li>
               </ul>
             </div>

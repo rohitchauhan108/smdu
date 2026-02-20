@@ -209,11 +209,11 @@ const navigationItems = [
               href: "#",
               icon: RiUserSettingsLine,
             },
-            // {
-            //   label: "Registrar",
-            //   href: "/about/registrar",
-            //   icon: ClipboardList,
-            // },
+            {
+              label: "Registrar",
+              href: "/about/registrar",
+              icon: ClipboardList,
+            },
             {
               label: "Control of Examination",
               href: "/about/control-of-examination",
