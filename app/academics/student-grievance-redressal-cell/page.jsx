@@ -77,7 +77,7 @@ export default function StudentGrievanceCommitteePage() {
                 <tbody className="divide-y divide-orange-200">
                   {[
                     ["1", "Prof. Dr. J. P. Pachauri", "Ex. V.C. / University Advisor — Chairperson"],
-                    ["2", "Dr. Amit Kumar", "Registrar — Member"],
+                    ["2", "Dr. Kapil Mohan", "Registrar — Member"],
                     ["3", "Mr. Naveen Nautiyal", "In-Charge Exam — Member"],
                     ["4", "Mr. Yatendra Singh Rawat", "Agri. Department — Member"],
                     ["5", "Dr. Kaushiki Kumari", "Counsellor — Member"],

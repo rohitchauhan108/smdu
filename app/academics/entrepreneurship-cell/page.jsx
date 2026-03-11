@@ -208,7 +208,7 @@ export default function EntrepreneurshipCellPage() {
           {/* Footer Registrar Note */}
           <div className="bg-white rounded-2xl sm:rounded-3xl shadow-xl border border-orange-100 p-6 sm:p-8 md:p-10 text-center">
             <p className="font-semibold text-lg text-gray-900">
-              <strong>Dr. Amit Kumar</strong>
+              <strong>Dr. Kapil Mohan</strong>
             </p>
             <p className="text-sm text-gray-700 mt-1">
               Registrar, Smt. Manjira Devi University

@@ -167,7 +167,7 @@ export default function BoardOfManagementTable() {
                     Secretary
                   </td>
                   <td className="px-6 py-5">
-                    Dr. Amit Kumar
+                    Dr. Kapil Mohan
                   </td>
                 </tr>
 

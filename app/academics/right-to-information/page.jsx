@@ -65,7 +65,7 @@ export default function RTIPage() {
                     <tr className="hover:bg-orange-50/50 transition">
                       <td className="px-6 py-5 text-center font-medium">2</td>
                       <td className="px-6 py-5">
-                        <div className="font-semibold">Dr. Amit Kumar</div>
+                        <div className="font-semibold">Dr. Kapil Mohan</div>
                         <div className="text-gray-600 text-sm">Registrar</div>
                       </td>
                       <td className="px-6 py-5">Appellate Officer</td>

@@ -189,8 +189,8 @@ export default function RegistrarMessage() {
                   <span className="text-sm">Phone: +91-8279434794</span>
                 </li>
                 <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
-                  <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
-                  <span className="text-sm">Email: contact@drkapilmohan.site</span>
+                  <div className="w-2 g-2 bg-[#F97316] rounded-full mt-2 shrink-0" />
+                  <span className="text-sm">Email: registrar@smdu.edu.in</span>
                 </li>
                 <li className="flex items-start gap-3 pl-4 border-l-2 border-orange-200">
                   <div className="w-2 h-2 bg-[#F97316] rounded-full mt-2 shrink-0" />

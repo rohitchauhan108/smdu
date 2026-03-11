@@ -68,8 +68,8 @@ export default function EqualOpportunityCellPage() {
               <tbody className="divide-y divide-orange-100">
                 <tr className="hover:bg-orange-50/50 transition">
                   <td className="px-4 py-4">1</td>
-                  <td className="px-4 py-4">Dr. Amit Kumar</td>
-                  <td className="px-4 py-4">Registrar — Chairperson</td>
+                  <td className="px-4 py-4">Dr. Kapil Mohan</td>
+                  <td className="px-4 py-4">Chairperson</td>
                 </tr>
                 <tr className="hover:bg-orange-50/50 transition">
                   <td className="px-4 py-4">2</td>

@@ -84,7 +84,7 @@ export default function DisabilityPolicyPage() {
                     <tr className="hover:bg-orange-50/50 transition"><td className="px-4 py-4">3</td><td>Mr. Yatendra Rawat</td><td>Member</td></tr>
                     <tr className="hover:bg-orange-50/50 transition"><td className="px-4 py-4">4</td><td>Shireen Ansari</td><td>Member</td></tr>
                     <tr className="hover:bg-orange-50/50 transition"><td className="px-4 py-4">5</td><td>Mr. Ajay Gusain</td><td>Member</td></tr>
-                    <tr className="hover:bg-orange-50/50 transition"><td className="px-4 py-4">6</td><td>Dr. Amit Kumar</td><td>Member</td></tr>
+                    <tr className="hover:bg-orange-50/50 transition"><td className="px-4 py-4">6</td><td>Smt. Jyoti Upadhyay</td><td>Member</td></tr>
                     <tr className="hover:bg-orange-50/50 transition"><td className="px-4 py-4">7</td><td>Dr. Kapil Mohan</td><td>Member</td></tr>
                     <tr className="hover:bg-orange-50/50 transition"><td className="px-4 py-4">8</td><td>Mr. Vishal Mani Nautiyal</td><td>Parents Representative</td></tr>
                     <tr className="hover:bg-orange-50/50 transition"><td className="px-4 py-4">9</td><td>Mr. Bharat Singh</td><td>Parents Representative</td></tr>

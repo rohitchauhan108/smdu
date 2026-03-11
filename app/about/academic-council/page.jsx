@@ -143,7 +143,7 @@ export default function AcademicCouncilTable() {
           </td>
           <td className="px-6 py-4 text-gray-700 border-r border-orange-100">Secretary</td>
           <td className="px-6 py-4 text-gray-800">
-            Dr. Amit Kumar
+            Dr. Kapil Mohan
           </td>
         </tr>
       </tbody>

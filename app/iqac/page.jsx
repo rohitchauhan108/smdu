@@ -24,7 +24,7 @@ const page = () => {
     {
       sno: 4,
       designation: ["Few Senior Administrative Officers"],
-      members: [{ name: "Dr. Amit Kumar", dept: "Registrar" }],
+      members: [{ name: "Dr. Jyoti Upadhyay" }],
     },
     {
       sno: 5,

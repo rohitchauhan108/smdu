@@ -79,7 +79,7 @@ export default function FinanceCommitteeTable() {
                 />
 
                 <TableRow
-                  name="Dr. Amit Kumar"
+                  name="Dr. Kapil Mohan"
                   designation="Registrar"
                   role="Member"
                 />

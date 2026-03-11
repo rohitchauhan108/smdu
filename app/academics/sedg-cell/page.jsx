@@ -195,7 +195,7 @@ export default function SEDGCellPage() {
 
           {/* Footer Note */}
           <div className="text-center text-base text-gray-800 font-semibold pt-8 border-t border-orange-100">
-            <p><strong>Dr. Amit Kumar</strong><br />Registrar, Smt. Manjira Devi University</p>
+            <p><strong>Dr. Kapil Mohan</strong><br />Registrar, Smt. Manjira Devi University</p>
           </div>
         </div>
       </div>
