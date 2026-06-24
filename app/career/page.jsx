@@ -199,7 +199,7 @@ const page = () => {
                   },{
                     icon: Phone,
                     label: "Phone",
-                    value: "01371-299442 | 80063-45557 | 80063-45558",
+                    value: "01371-299442 | 80063-45558 | 80063-45557",
                   },{
                     icon: MapPin,
                     label: "Campus Address",

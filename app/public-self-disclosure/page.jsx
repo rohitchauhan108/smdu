@@ -671,7 +671,7 @@ export default function PublicDisclosure() {
 
         <p className="text-center text-sm text-gray-500 mt-12">
           Last updated: January 2026 • Contact: registrar@smdu.edu.in |
-          +91-80063-45557
+          +91-80063-45558
         </p>
       </div>
     </section>

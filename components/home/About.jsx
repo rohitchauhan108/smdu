@@ -92,19 +92,7 @@ export default function About() {
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-6 mb-8">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-[#f46b13]/10 flex items-center justify-center">
-                  <Award className="w-6 h-6 text-[#f46b13]" />
-                </div>
-                <div>
-                  <div className="font-semibold text-text-dark">
-                    NAAC A+ Grade
-                  </div>
-                  <div className="text-sm text-text-muted">Accredited</div>
-                </div>
-              </div>
-
+            <div className="grid grid-cols-1 gap-6 mb-8">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-[#f46b13]/10 flex items-center justify-center">
                   <Users className="w-6 h-6 text-[#f46b13]" />

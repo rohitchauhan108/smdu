@@ -20,9 +20,9 @@ const items = [
   {
     icon: Phone,
     title: "HR Contact",
-    content: "+91 80063-45557",
-    subContent: "+91 80063-45558",
-    link: "tel:+918006345557",
+    content: "+91 80063-45558",
+    subContent: "+91 80063-45557",
+    link: "tel:+918006345558",
   },
   {
     icon: Mail,

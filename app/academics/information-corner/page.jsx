@@ -119,8 +119,8 @@ export default function InformationCornerPage() {
               </p>
               <p>
                 Phone:{" "}
-                <a href="tel:+918006345557" className="text-orange-600 hover:underline">
-                  +91-80063-45557
+                <a href="tel:+918006345558" className="text-orange-600 hover:underline">
+                  +91-80063-45558
                 </a>
               </p>
               <p>

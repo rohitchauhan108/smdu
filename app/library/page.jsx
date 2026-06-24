@@ -223,7 +223,7 @@ export default function LibraryPage() {
               Chief Librarian<br />
               Rukmani Nagar, Hitanu (Dhanari), Dunda, Uttarkashi, Uttarakhand – 249151<br />
               <strong>Contact:</strong> 01371 – 299442<br />
-              <strong>Email:</strong> info@smdu.edu.in
+              <strong>Email:</strong> <a href="mailto:info@smdu.edu.in" className="text-orange-600 hover:underline">info@smdu.edu.in</a>
             </p>
           </div>
         </div>

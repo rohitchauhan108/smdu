@@ -75,7 +75,8 @@ const footerLinks = {
       { label: "Career", href: "/career" },
       { label: "Alumni", href: "/alumni" },
       { label: "Public Self Disclosure", href: "/public-self-disclosure" },
-      { label: "Ph.D Admissions 2026", href: "/admissions/phdadmission.pdf" },
+      { label: "Ph.D Registration 2026", href: "https://forms.gle/FJpA6tBQxUKpkWcu7" },
+      { label: "Ph.D Notification", href: "/admissions/Ph.D. Notification-SOA- 2026.pdf" },
     ],
   },
    programmes: {
@@ -84,7 +85,8 @@ const footerLinks = {
       { label: "Faqs", href: "/admissions/faqs" },
       { label: "Contact Admissions", href: "/contact" },
       { label: "Right to Infomation", href: "/academcics/right-to-information" },
-  {label: "Public Self Disclosure", href: "/public-self-disclosure" }
+  {label: "UGC Proforma", href: "/disclosure/UGC-Proforma.pdf" },
+  {label: "Ugc Appendix", href: "/disclosure/UGC-Appendix.pdf" }
 
     ],
   },
@@ -176,8 +178,8 @@ export function Footer() {
               <div className="flex gap-4">
                 <Phone className="w-6 h-6 text-white/80 shrink-0" />
                 <div className="flex flex-col">
-                  <a href="tel:+918006345557" className="text-white/80 hover:text-white transition cursor-pointer">+91-80063-45557</a>
                   <a href="tel:+918006345558" className="text-white/80 hover:text-white transition cursor-pointer">+91-80063-45558</a>
+                  <a href="tel:+918006345557" className="text-white/80 hover:text-white transition cursor-pointer">+91-80063-45557</a>
                 </div>
               </div>
               <div className="flex gap-4">

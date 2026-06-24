@@ -630,16 +630,9 @@ export function Header() {
               </Link>
 
               {/* Contact & CTA Buttons - Fixed layout */}
-              <div className="hidden lg:flex items-center gap-6 shrink-0">
+              <div className="hidden lg:flex items-center gap-4 shrink-0">
                 {/* Phone Numbers */}
                 <div className="flex flex-col gap-0.5">
-                  <a
-                    href="tel:+918006345557"
-                    className="flex items-center gap-2 text-[#0891b2] font-medium hover:underline text-sm"
-                  >
-                    <Phone className="w-4 h-4" />
-                    +91-80063-45557
-                  </a>
                   <a
                     href="tel:+918006345558"
                     className="flex items-center gap-2 text-[#0891b2] font-medium hover:underline text-sm"
@@ -647,28 +640,39 @@ export function Header() {
                     <Phone className="w-4 h-4" />
                     +91-80063-45558
                   </a>
+                  <a
+                    href="tel:+918006345557"
+                    className="flex items-center gap-2 text-[#0891b2] font-medium hover:underline text-sm"
+                  >
+                    <Phone className="w-4 h-4" />
+                    +91-80063-45557
+                  </a>
                 </div>
 
-                <div className="flex flex-col items-center">
+                <Link
+                  href="/admissions/enquiry"
+                  className="bg-[#f97316] hover:bg-[#ea580c] text-sm text-white py-2 font-semibold px-6 rounded-full"
+                >
+                  Enquiry Form
+                </Link>
+
+                {/* Ph.D Admissions Buttons */}
+                <div className="flex flex-col gap-1 items-center">
                   <Link
-                    href="/admissions/enquiry"
+                    target="_blank"
+                    href="https://forms.gle/FJpA6tBQxUKpkWcu7"
                     className="bg-[#f97316] hover:bg-[#ea580c] text-sm text-white py-2 font-semibold px-6 rounded-full"
                   >
-                    Enquiry Form
+                    Ph.D Registration
                   </Link>
-                  {/* <Link href="/fee-payment" className="text-[#0891b2] text-xs hover:underline mt-1 whitespace-nowrap">
-                    Click here for Fee Payment
-                  </Link> */}
+                  <Link
+                    target="_blank"
+                    href="/admissions/Ph.D. Notification-SOA- 2026.pdf"
+                    className="text-xs text-[#0891b2] hover:underline whitespace-nowrap"
+                  >
+                    View Notification
+                  </Link>
                 </div>
-
-                {/* Ph.D Admissions Button */}
-                <Link
-                  target="_blank"
-                  href="/admissions/phdadmission.pdf"
-                  className="bg-[#f97316] hover:bg-[#ea580c] text-sm text-white py-2 font-semibold px-6 rounded-full shrink-0"
-                >
-                  Ph.D Admissions 2025
-                </Link>
               </div>
 
               {/* Mobile Menu Button */}

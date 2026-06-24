@@ -138,12 +138,12 @@ export default function AcademicCollaborationPage() {
               </p>
               <p>
                 <strong>Phone:</strong>{" "}
-                <a href="tel:+918006345557" className="text-orange-600 hover:underline transition">
-                  +91-80063-45557
-                </a>
-                ,{" "}
                 <a href="tel:+918006345558" className="text-orange-600 hover:underline transition">
                   +91-80063-45558
+                </a>
+                ,{" "}
+                <a href="tel:+918006345557" className="text-orange-600 hover:underline transition">
+                  +91-80063-45557
                 </a>
               </p>
             </address>

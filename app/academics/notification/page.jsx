@@ -3,7 +3,7 @@
 import { ChevronDown, FileText, Download } from "lucide-react"
 import { useState } from "react"
 
-const NotificationCard = ({ title, pdfUrl }) => {
+const NotificationCard = ({ title, pdfUrl, googleFormUrl }) => {
   const handleDownload = (url) => {
     if (!url) return
     const link = document.createElement("a")
@@ -17,27 +17,40 @@ const NotificationCard = ({ title, pdfUrl }) => {
       <div className="p-6 sm:p-8">
         <h3 className="text-xl font-bold text-gray-900 mb-6">{title}</h3>
 
-        {pdfUrl && (
-          <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col gap-4">
+          {googleFormUrl && (
             <a
-              href={pdfUrl}
+              href={googleFormUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition font-medium text-center"
+              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition font-medium text-center"
             >
               <FileText className="w-5 h-5" />
-              View
+              Register Now
             </a>
+          )}
+          {pdfUrl && (
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href={pdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition font-medium text-center"
+              >
+                <FileText className="w-5 h-5" />
+                View Notification
+              </a>
 
-            <button
-              onClick={() => handleDownload(pdfUrl)}
-              className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition font-medium"
-            >
-              <Download className="w-5 h-5" />
-              Download
-            </button>
-          </div>
-        )}
+              <button
+                onClick={() => handleDownload(pdfUrl)}
+                className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition font-medium"
+              >
+                <Download className="w-5 h-5" />
+                Download
+              </button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   )
@@ -56,12 +69,19 @@ export default function NotificationPage() {
     },
     {
       id: 2,
+      title: "Ph.D Registration 2026",
+      category: "Admissions",
+      pdfUrl: "/admissions/Ph.D. Notification-SOA- 2026.pdf",
+      googleFormUrl: "https://forms.gle/FJpA6tBQxUKpkWcu7",
+    },
+    {
+      id: 3,
       title: "Ph.D Entrance Examination 2025",
       category: "Exams",
-      pdfUrl: "/admissions/phdadmission.pdf",
+      pdfUrl: "/admissions/Ph.D. Notification-SOA- 2026.pdf",
     },
       {
-      id: 3,
+      id: 4,
       title: "Admission Form 2025-2026",
       category: "Admissions",
       pdfUrl: "/admissions/admission-form.pdf",

@@ -14,7 +14,7 @@ const actions = [
   },
   {
     label: "WhatsApp",
-    href: "https://wa.me/918006345557",
+    href: "https://wa.me/918006345558",
     color: "bg-green-500",
     hover: "hover:bg-green-600",
     icon: BiLogoWhatsapp,
@@ -22,14 +22,14 @@ const actions = [
   },
   {
     label: "Call Us",
-    href: "tel:+918006345557",
+    href: "tel:+918006345558",
     color: "bg-blue-600",
     hover: "hover:bg-blue-700",
     icon: PhoneCall,
   },
   {
     label: "Email Us",
-    href: "mailto:info@smduniversity.ac.in",
+    href: "mailto:info@smdu.edu.in",
     color: "bg-red-500",
     hover: "hover:bg-red-600",
     icon: Mail,
